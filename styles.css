@@ -1,8 +1,49 @@
-/*
+/* 隐藏复制按钮 */
+.mindmap-markdown-preview .copy-code-button,
+.mindmap-markdown-preview code-block .copy-code-button {
+    display: none !important;
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+/* 确保无序列表正确显示 */
+.mindmap-markdown-preview ul {
+    list-style-type: disc !important;
+    margin-left: 1.5em !important;
+    padding-left: 0 !important;
+}
 
-If your plugin does not need CSS, delete this file.
+.mindmap-markdown-preview ul li {
+    list-style-type: disc !important;
+    display: list-item !important;
+    margin: 0.2em 0;
+}
 
-*/
+/* 去掉显示出来的"-"文本（这是Markdown源码被当作文本了） */
+.mindmap-markdown-preview li::before {
+    content: none !important;
+    display: none !important;
+}
+
+/* 修复叶子节点文本显示 */
+.mindmap-markdown-preview li {
+    position: relative;
+}
+
+/* 确保标题和列表之间有空隙 */
+.mindmap-markdown-preview h1 + ul,
+.mindmap-markdown-preview h2 + ul,
+.mindmap-markdown-preview h3 + ul,
+.mindmap-markdown-preview h4 + ul,
+.mindmap-markdown-preview h5 + ul,
+.mindmap-markdown-preview h6 + ul {
+    margin-top: 0.5em;
+}
+
+/* 根节点样式 */
+.mindmap-markdown-preview > strong:first-of-type {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: var(--text-accent);
+    border-bottom: 2px solid var(--text-accent);
+    padding-bottom: 0.3em;
+}
