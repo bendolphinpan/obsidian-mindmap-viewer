@@ -2,10 +2,9 @@
   "id": "mindmap-viewer",
   "name": "Mindmap Viewer",
   "version": "1.0.0",
-  "minAppVersion": "0.15.0",
-  "description": "Preview FreeMind (.mm) and XMind (.xmind) files as structured Markdown with hierarchical headers and bullet points for leaf nodes.",
-  "author": "Your Name",
-  "authorUrl": "https://yourwebsite.com",
-  "fundingUrl": "https://buymeacoffee.com/yourname",
+  "minAppVersion": "1.8.7",
+  "description": "Preview FreeMind (.mm) and XMind (.xmind) files as structured Markdown.",
+  "author": "Bendolphinpan",
+  "authorUrl": "https://github.com/bendolphinpan",
   "isDesktopOnly": false
 }
